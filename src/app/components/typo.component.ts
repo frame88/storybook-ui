@@ -2,7 +2,7 @@ import { NgClass } from '@angular/common';
 import { booleanAttribute, Component, input } from '@angular/core';
 
 @Component({
-  selector: 'app-typo',
+  selector: 'itk-typo',
   standalone: true,
   imports: [NgClass],
   template: `
@@ -24,7 +24,7 @@ import { booleanAttribute, Component, input } from '@angular/core';
       'italic': italic(),
       'bold': bold()
     }">
-      <ng-content>esempio</ng-content>
+      <ng-content>Lorem Ipsum</ng-content>
     </h1>
   `,
   styles: `
@@ -53,10 +53,23 @@ import { booleanAttribute, Component, input } from '@angular/core';
     .bold { font-weight: 600; }
   `
 })
+
 export class TypoComponent {
+  /**
+   * Tipo di testo
+  */
   size = input<'title' | 'subtitle' | 'heading1'| 'heading2'| 'heading3'| 
   'heading4'| 'heading5'| 'heading6' | 'body' | 'smallbody' | 'label' | 'button' | 'caption'>('smallbody')
+  /**
+   * Testo con sottotitolo
+   */
   underlined = input(false, { transform: booleanAttribute })
+  /**
+   * Testo in corsivo
+   */
   italic = input(false, { transform: booleanAttribute })
+  /** 
+   * testo in grassetto
+   */
   bold = input(false, { transform: booleanAttribute })
 }
