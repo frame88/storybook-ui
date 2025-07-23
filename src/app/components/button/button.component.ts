@@ -56,7 +56,6 @@ export type Size = 'small' | 'medium' | 'large';
       }
     }
 
-
     .btn-primary {
       background: $primary;
       color: #fff;
