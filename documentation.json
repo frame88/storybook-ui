@@ -161,7 +161,7 @@
         },
         {
             "name": "CardComponent",
-            "id": "component-CardComponent-2ea72b1827db73d91cd1618ef661b42d8013e84f014a5330e6f903a55c2938f0cb0e324886fab2438b6bc07d4d38921ec32df2a34e8c0945597873ca66f1e418",
+            "id": "component-CardComponent-29cafb8a186bbdc66d39b32bf6f508c12c5a643a1308a8f0a97deef426bae168e4d85b60f18bfbc571dd8a2b1c5c714539025511adb884ee17cff692f655bbfa",
             "file": "src/app/components/card/card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -173,7 +173,7 @@
             "styles": [
                 "\n\n  "
             ],
-            "template": "<div>\n  @if(pathImg()) {\n    <img src=\"../../../assets/white.png\" alt=\"immagine della card\">\n  }\n  <div class=\"card-body\">\n    <h2>{{ title() }}</h2>\n    <p>{{ description() }}</p>\n    <button class=\"btn\">Action</button>\n    <button class=\"btn\">Action</button>\n  </div>\n</div>\n",
+            "template": "<div>\n  @if(pathImg()) {\n    <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rPTHZR-Z79Cx2lK4isBzBCU_s-Apqysa4w&s\" alt=\"immagine della card\">\n  }\n  <div class=\"card-body\">\n    <h2>{{ title() }}</h2>\n    <p>{{ description() }}</p>\n    <button class=\"btn\">Action</button>\n    <button class=\"btn\">Action</button>\n  </div>\n</div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -247,7 +247,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'pizza-card',\r\n  standalone: true,\r\n  imports: [],\r\n  template: `\r\n    <div>\r\n      @if(pathImg()) {\r\n        <img src=\"../../../assets/white.png\" alt=\"immagine della card\">\r\n      }\r\n      <div class=\"card-body\">\r\n        <h2>{{ title() }}</h2>\r\n        <p>{{ description() }}</p>\r\n        <button class=\"btn\">Action</button>\r\n        <button class=\"btn\">Action</button>\r\n      </div>\r\n    </div>\r\n  `,\r\n  styles: `\r\n\r\n  `\r\n})\r\nexport class CardComponent {\r\n    url = input<string>()\r\n    pathImg = input<string>('../../../assets/white.png');\r\n    title = input<string>('Card Title s')\r\n    description = input<string>('Card description goes here. It provides a brief overview of the content');\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'pizza-card',\r\n  standalone: true,\r\n  imports: [],\r\n  template: `\r\n    <div>\r\n      @if(pathImg()) {\r\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rPTHZR-Z79Cx2lK4isBzBCU_s-Apqysa4w&s\" alt=\"immagine della card\">\r\n      }\r\n      <div class=\"card-body\">\r\n        <h2>{{ title() }}</h2>\r\n        <p>{{ description() }}</p>\r\n        <button class=\"btn\">Action</button>\r\n        <button class=\"btn\">Action</button>\r\n      </div>\r\n    </div>\r\n  `,\r\n  styles: `\r\n\r\n  `\r\n})\r\nexport class CardComponent {\r\n    url = input<string>()\r\n    pathImg = input<string>('../../../assets/white.png');\r\n    title = input<string>('Card Title s')\r\n    description = input<string>('Card description goes here. It provides a brief overview of the content');\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "\n\n  \n",
