@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/angular';
-import { TypoComponent } from "./typo.component";
-
+import { TypoComponent } from './typo.component';
 /**
     Una buona tipografia facilita la lettura, guida l’attenzione dell’utente e rafforza l’identità visiva, contribuendo in modo essenziale all’esperienza complessiva.
  */
@@ -15,7 +14,7 @@ export default meta;
 
 export const Basic: StoryObj<TypoComponent> = {
     args: {
-        size: 'smallbody',
+        size: 'body',
         underlined: false,
         italic: false,
         bold: false
@@ -24,12 +23,11 @@ export const Basic: StoryObj<TypoComponent> = {
         size: {
             control: 'select',
             options: [
-            'title','subtitle','heading1','heading2','heading3',
-            'heading4','heading5','heading6','body','smallbody',
-            'label','button','caption'
+            'hero','heading1','heading2','heading3',
+            'body','label','button'
             ],
             table: {
-                defaultValue: { summary: 'smallbody' },
+                defaultValue: { summary: 'body' },
             },
         },
         underlined: {

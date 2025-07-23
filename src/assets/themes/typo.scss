@@ -1,0 +1,20 @@
+@mixin lucky {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin fredoka {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.lucky {
+  @include lucky();
+}
+
+.fredoka {
+  @include fredoka();
+}
